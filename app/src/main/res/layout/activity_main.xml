@@ -3,49 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="8dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_reais" />
+        android:gravity="center"
+        android:text="@string/valor_em_reais"
+        android:textSize="25sp" />
 
     <EditText
         android:id="@+id/edit_value"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
         android:text="" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
         android:text="@string/valor_convertido_para_dolar" />
 
     <TextView
         android:id="@+id/text_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_convertido_para_dolar" />
+        android:layout_marginTop="16dp"
+        android:text="@string/valor_convertido_para_dolar"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
         android:text="@string/valor_convertido_para_euro" />
 
     <TextView
         android:id="@+id/text_euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_convertido_para_euro" />
+        android:layout_marginTop="16dp"
+        android:text="@string/valor_convertido_para_euro"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_calculate"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
+        android:layout_marginTop="80dp"
         android:background="@color/colorAccent"
-        android:text="@string/calcular" />
+        android:onClick="onClick"
+        android:text="@string/calcular"
+        android:textColor="@color/colorLight" />
 
 </LinearLayout>
