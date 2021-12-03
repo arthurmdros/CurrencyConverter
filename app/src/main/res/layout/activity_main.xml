@@ -16,7 +16,8 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text=""
+        android:id="@+id/editValue"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_convertido_para_dolar"/>
+        android:text="@string/valor_convertido_para_dolar"
+        android:id="@+id/textDolar"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,10 +38,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_convertido_para_euro"/>
+        android:text="@string/valor_convertido_para_euro"
+        android:id="@+id/textEuro"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calcular"/>
+        android:text="@string/calcular"
+        android:id="@+id/buttonCalculate"/>
+
 </LinearLayout>
