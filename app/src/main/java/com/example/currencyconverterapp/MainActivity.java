@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.mViewHolder.textEuro = findViewById(R.id.text_euro);
         this.mViewHolder.buttonCalculate = findViewById(R.id.button_calculate);
 
+        this.clearValues();
     }
 
     @Override
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, this.getString(R.string.informe_valor), Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    private void clearValues(){
+        this.mViewHolder.textDolar.setText("");
+        this.mViewHolder.textEuro.setText("");
     }
 
     private static class ViewHolder {
