@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CurrencyConverterApp</string>
+    <string name="valor_em_reais">Valor em Reais(R$):</string>
+    <string name="valor_convertido_para_dolar">Valor convertido para Dólar(U$$):</string>
+    <string name="valor_convertido_para_euro">Valor convertido para Euro(£):</string>
+    <string name="calcular">Calcular</string>
 </resources>
