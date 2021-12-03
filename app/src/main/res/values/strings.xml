@@ -4,4 +4,5 @@
     <string name="valor_convertido_para_dolar">Valor convertido para Dólar(U$$):</string>
     <string name="valor_convertido_para_euro">Valor convertido para Euro(£):</string>
     <string name="calcular">Calcular</string>
+    <string name="informe_valor">Informe o valor!</string>
 </resources>
