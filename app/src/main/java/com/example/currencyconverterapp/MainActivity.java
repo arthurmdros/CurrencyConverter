@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if("".equals(value)){
                 // Mostrar uma mensagem de alerta para o usuário
                 Toast.makeText(this, this.getString(R.string.informe_valor), Toast.LENGTH_LONG).show();
+                this.clearValues();
+            }else{
+                Double valueCurrency = Double.valueOf(value);
+
+                this.mViewHolder.textDolar.setText(String.format("R$ %.2f", valueCurrency/5.63));
+                this.mViewHolder.textEuro.setText(String.format("R$ %.2f", valueCurrency/6.36));
             }
         }
     }
