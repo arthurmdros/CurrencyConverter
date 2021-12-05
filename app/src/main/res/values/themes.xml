@@ -3,14 +3,14 @@
     <style name="Theme.CurrencyConverterApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorPrimaryText</item>
-        <item name="colorSecondaryVariant">@color/colorSecundaryText</item>
-        <item name="colorOnSecondary">@color/colorDividerText</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--<item name="android:statusBarColor">@color/colorPrimary</item> -->
+        <item name="android:windowBackground">@drawable/splash_bg</item>
     </style>
 </resources>
