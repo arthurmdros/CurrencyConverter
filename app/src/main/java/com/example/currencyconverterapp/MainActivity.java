@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_CurrencyConverterApp);
         setContentView(R.layout.activity_main);
 
         this.mViewHolder.editValue = findViewById(R.id.edit_value);
@@ -37,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }else{
                 Double valueCurrency = Double.valueOf(value);
 
-                this.mViewHolder.textDolar.setText(String.format("R$ %.2f", valueCurrency/5.63));
-                this.mViewHolder.textEuro.setText(String.format("R$ %.2f", valueCurrency/6.36));
+                this.mViewHolder.textDolar.setText(String.format("U$$ %.2f", valueCurrency/5.63));
+                this.mViewHolder.textEuro.setText(String.format("£ %.2f", valueCurrency/6.36));
             }
         }
     }
