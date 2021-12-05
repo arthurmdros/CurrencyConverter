@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="@string/valor_em_reais"
+        android:textColor="@color/colorAccent"
         android:textSize="25sp" />
 
     <EditText
@@ -20,21 +22,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:textAlignment="center"
         android:inputType="numberSigned"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="50dp"
-        android:textSize="16sp"
-        android:text="@string/valor_convertido_para_dolar" />
+        android:text="@string/valor_convertido_para_dolar"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/text_dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/valor_convertido_para_dolar"
         android:textColor="@color/colorAccent"
@@ -43,14 +49,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="50dp"
-        android:textSize="16sp"
-        android:text="@string/valor_convertido_para_euro" />
+        android:text="@string/valor_convertido_para_euro"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/text_euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/valor_convertido_para_euro"
         android:textColor="@color/colorAccent"
@@ -59,12 +68,12 @@
     <Button
         android:id="@+id/button_calculate"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="80dp"
-        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
         android:onClick="onClick"
         android:text="@string/calcular"
-        android:textColor="@color/colorLight" />
+        android:textColor="@color/colorPrimary" />
 
 </LinearLayout>
