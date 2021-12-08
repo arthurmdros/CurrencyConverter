@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(this, this.getString(R.string.informe_valor), Toast.LENGTH_LONG).show();
                 this.clearValues();
             }else{
-                Double valueCurrency = Double.valueOf(value);
+                double valueCurrency = Double.parseDouble(value.replace("," , "."));
 
                 this.mViewHolder.textDolar.setText(String.format("U$$ %.2f", valueCurrency/5.63));
                 this.mViewHolder.textEuro.setText(String.format("£ %.2f", valueCurrency/6.36));
